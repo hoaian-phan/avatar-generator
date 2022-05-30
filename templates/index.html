@@ -1,8 +1,16 @@
-extends "base.html"
+{% extends 'base.html' %}
 
 {% block title %}My Avatar Generator{% endblock %}
 
 {% block body %} 
+    <h1>My Disney avatar</h1>
+
+    <form action="/random_disney">
+        Surprise me with my Disney avatar
+
+        <button type="submit" name="disney" value="random">Random my Disney avatar</button>
+
+    </form>
     
 
 
