@@ -5,6 +5,13 @@
 {% block body %} 
 
     <h3> Your Disney character is {{data["name"]}}</h3>
+    {% if data["films"] %}
+    <h4> in the Disney movie '{{data["films"][0]}}'' </h4>
+    {% elif data["shortFilms"] %}
+    <h4> in the Disney movie '{{data["shortFilms"][0]}}'' </h4>
+    {% elif data["tvShows"] %}
+    <h4> in the Disney movie '{{data["tvShows"][0]}}'' </h4>
+    {% endif %}
     <div>
         <img src="{{data['imageUrl']}}">
     </div>
