@@ -31,7 +31,6 @@ def random_disney():
     
     url = "https://api.disneyapi.dev/characters/" + str(char_id)
     
-
     response = requests.get(url)
     data = response.json()
 

@@ -16,5 +16,19 @@
         <img src="{{data['imageUrl']}}">
     </div>
 
+    <div>
+        I love this character. 
+        <br><button name="like_disney" value="like_disney">Thumb up</button>
+    </div>
+
+    <form action="/random_disney">
+        Hmmm, I don't like this character.
+        <br> Give me a different one.
+
+        <br><button type="submit" name="random_disney" value="random_disney">My Disney avatar</button>
+
+    </form>
+
+
 
 {% endblock %}

@@ -4,10 +4,21 @@
 
 {% block body %} 
 
-    <h3> Your cat avatar is 
+    <h3> Your cat avatar is </h3>
     <div>
         <img src="{{data}}">
     </div>
 
+    <div>
+        Awww, this cat is cute. I like it!
+        <br> <button name="like_cat" value="like_cat">Like</button>
+    </div>
+
+    <form action="/random_cat">
+        Hmm, give me another try.
+
+        <br><button type="submit" name="random_cat" value="random_cat">My cat avatar</button>
+
+    </form>
 
 {% endblock %}
