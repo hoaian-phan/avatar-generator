@@ -13,7 +13,12 @@
       {% block head %}{% endblock %}
 </head>
 <body>
-    {% block navbar %} {% endblock %}
+    {% block navbar %} 
+        <form action="/">
+            
+            <button type="submit" name="home" value="home">Home</button>
+        </form>
+    {% endblock %}
     {% block body %} {% endblock %}
 
     {% block afterbody %} {% endblock %}
