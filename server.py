@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, flash, render_template, redirect
 from jinja2 import StrictUndefined
 from random import randint
+from model import connect_to_db, db
 import requests
 import os
 
@@ -75,5 +76,5 @@ def random_dog():
 
 if __name__ == "__main__":
     # DebugToolbarExtension(app)
-    
+    connect_to_db(app)
     app.run(debug=True)
