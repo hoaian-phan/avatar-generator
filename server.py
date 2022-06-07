@@ -14,14 +14,13 @@ app.jinja_env.undefined = StrictUndefined
 def index():
     """ Show homepage """
 
-
     return render_template("index.html")
 
 
 # Route to generate a random Disney avatar
 @app.route("/random_disney")
 def random_disney():
-    """ Choose a random Disney character and display its image"""
+    """ Choose a random Disney character by calling Disney API"""
 
     avatar = request.args.get("random_disney")
 
