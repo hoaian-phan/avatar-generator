@@ -6,5 +6,9 @@ Start date: May 29, 2022
 
 Progress: on-going
 
-Purpose: practice calling APIs
+Purpose: use Python library requests to call APIs and learn a new technology
+
+Tech stack: Python, Flask, HTML, CSS, REST APIs, JavaScript, Tailwind CSS
+
+New technology: Tailwind CSS
 
